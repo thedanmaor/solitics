@@ -5,7 +5,6 @@ module "cdn" {
   source  = "terraform-aws-modules/cloudfront/aws"
   version = "3.3.2"
 
-
   #aliases = ["cdn.example.com"]
 
   comment             = "CloudFront For Solitics"
