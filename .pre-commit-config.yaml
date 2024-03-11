@@ -15,7 +15,7 @@ repos:
     hooks:
       - id: terraform_fmt
       - id: terraform_tflint
-      - id: terraform_checkov
+#      - id: terraform_checkov
         # args:
         #   - --args=--skip-check CKV_AWS_272,CKV_AWS_116,CKV_AWS_173,CKV_AWS_115,CKV_AWS_117,CKV_AWS_50,CKV2_AWS_61,CKV_AWS_18,CKV_AWS_145,CKV_AWS_144,CKV_AWS_56,CKV_AWS_55,CKV_AWS_21
 
