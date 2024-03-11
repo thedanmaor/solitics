@@ -5,5 +5,9 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.35.0"
     }
+    k8s = {
+      source  = "banzaicloud/k8s"
+      version = "~> 0.9.1"
+    }
   }
 }
