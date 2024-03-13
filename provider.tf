@@ -5,9 +5,18 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.35.0"
     }
-    k8s = {
-      source  = "banzaicloud/k8s"
-      version = "~> 0.9.1"
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "~> 2.27.0"
     }
   }
+}
+
+provider "aws" {
+  region = "eu-west-1"
+}
+
+provider "aws" {
+  region = "eu-west-2"
+  alias  = "london"
 }
